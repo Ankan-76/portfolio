@@ -261,8 +261,8 @@ class PortfolioSidebar extends HTMLElement {
         }
 
         .brand-avatar {
-          width: 72px;
-          height: 72px;
+          width: 100px;
+          height: 100px;
           border-radius: 50%;
           object-fit: cover;
           display: block;
@@ -272,15 +272,15 @@ class PortfolioSidebar extends HTMLElement {
         }
 
         .brand-name {
-          font-size: 0.85rem;
+          font-size: 1.15rem;
           font-weight: 600;
           color: #f1f0f5;
-          margin-bottom: 0.15rem;
+          margin-bottom: 0.2rem;
           font-family: 'Inter', sans-serif;
         }
 
         .brand-title {
-          font-size: 0.7rem;
+          font-size: 0.85rem;
           color: #a5a3b5;
           font-family: 'Inter', sans-serif;
         }

@@ -276,8 +276,12 @@ class PortfolioFooter extends HTMLElement {
                     }
 
                     .footer-grid {
-                        grid-template-columns: 1fr;
-                        gap: 2rem;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2rem 1rem;
+                    }
+
+                    .footer-brand {
+                        grid-column: 1 / -1;
                     }
                 }
             </style>
