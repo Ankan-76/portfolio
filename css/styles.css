@@ -1401,7 +1401,7 @@ ol {
 }
 
 .skill-card:hover .skill-card-icon {
-  transform: scale(1.15) rotateY(12deg);
+  transform: scale(1.15) rotateY(12deg) translateZ(20px);
 }
 
 .skill-card-name {
@@ -1625,4 +1625,13 @@ body.menu-open {
   .scroll-indicator {
     display: none !important;
   }
+}
+/* Typewriter Cursor */
+.typewriter-cursor {
+  animation: blink 0.75s step-end infinite;
+  opacity: 1;
+  color: var(--color-accent-light);
+}
+@keyframes blink {
+  50% { opacity: 0; }
 }

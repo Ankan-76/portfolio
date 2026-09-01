@@ -77,3 +77,51 @@ export function initCardTilt() {
         });
     });
 }
+
+// Typewriter effect
+export function initTypewriter() {
+    const el = document.querySelector('.typewriter-text');
+    if (!el) return;
+
+    const words = JSON.parse(el.getAttribute('data-words')) || ['Fullstack web developer', 'Tech Enthusiast', 'Problem solver'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    // Start with the first word pre-filled if it exists
+    if (!charIndex && el.textContent.trim().length > 0) {
+        charIndex = el.textContent.trim().length;
+        isDeleting = true; // start by deleting the initial word after a pause
+    }
+
+    function type() {
+        const currentWord = words[wordIndex];
+        const displayWord = isDeleting
+            ? currentWord.substring(0, charIndex - 1)
+            : currentWord.substring(0, charIndex + 1);
+
+        el.textContent = displayWord;
+
+        if (!isDeleting) {
+            charIndex++;
+        } else {
+            charIndex--;
+        }
+
+        let typeSpeed = isDeleting ? 40 : 100;
+
+        if (!isDeleting && charIndex === currentWord.length) {
+            typeSpeed = 4000; // Pause at end of word (increased by 2s)
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeSpeed = 400; // Pause before typing new word
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    // Initial delay before starting the effect
+    setTimeout(type, 1500);
+}

@@ -1,7 +1,7 @@
 // js/main.js
 // Main orchestrator — imports and initializes all modules
 
-import { initScrollReveal, initHeroEntrance, initCardTilt } from './animations.js';
+import { initScrollReveal, initHeroEntrance, initCardTilt, initTypewriter } from './animations.js';
 import { initNavigation, initPageTransitions } from './navigation.js';
 
 // Sidebar and footer components (auto-register custom elements)
@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hero entrance (only on pages with hero elements)
     if (document.querySelector('.hero-entrance')) {
         initHeroEntrance();
+        initTypewriter();
     }
 
     // Hero 3D canvas (only on homepage)

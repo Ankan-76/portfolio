@@ -312,7 +312,7 @@ class PortfolioFooter extends HTMLElement {
                 </div>
 
                 <div class="footer-bottom">
-                    <p class="footer-copyright">&copy; 2025 Ankan Biswas. All rights reserved.</p>
+                    <p class="footer-copyright">&copy; 2026 Ankan Biswas. All rights reserved.</p>
                     <a href="#main-content" class="btn-icon" aria-label="Back to top">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
                     </a>
