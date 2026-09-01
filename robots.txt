@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Ankan-76.github.io/portfolio/sitemap.xml

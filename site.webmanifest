@@ -1,0 +1,10 @@
+{
+  "name": "Ankan Biswas — Portfolio",
+  "short_name": "Ankan B.",
+  "description": "Full Stack Web Developer Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#06060f",
+  "theme_color": "#7c3aed",
+  "icons": []
+}

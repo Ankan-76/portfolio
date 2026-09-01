@@ -1,0 +1,73 @@
+// data/projects.js — Centralized project data
+// Replace placeholder values with real project information
+
+export const projects = [
+  {
+    id: 'portfolio-website',
+    title: 'Portfolio Website',
+    description: 'A personal portfolio website to showcase my skills, projects, and experience. Built with modern web technologies and 3D animations.',
+    category: 'Web Apps',
+    technologies: ['HTML5', 'Tailwind CSS', 'JavaScript'],
+    image: 'assets/images/projects/project-placeholder.svg',
+    github: 'https://github.com/Ankan-76',
+    demo: '[Live Demo URL]',
+    featured: true,
+  },
+  {
+    id: 'ecommerce-store',
+    title: 'E-Commerce Store',
+    description: 'A full-stack e-commerce platform with product filtering, cart functionality, and secure checkout process.',
+    category: 'Web Apps',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'REST API'],
+    image: 'assets/images/projects/project-placeholder.svg',
+    github: 'https://github.com/Ankan-76',
+    demo: '[Live Demo URL]',
+    featured: true,
+  },
+  {
+    id: 'task-manager',
+    title: 'Task Management App',
+    description: 'A task management application to organize, set priorities, and track progress of daily tasks.',
+    category: 'Web Apps',
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
+    image: 'assets/images/projects/project-placeholder.svg',
+    github: 'https://github.com/Ankan-76',
+    demo: '[Live Demo URL]',
+    featured: false,
+  },
+  {
+    id: 'weather-dashboard',
+    title: 'Weather Dashboard',
+    description: 'A weather application that provides real-time weather updates and forecasts using a public weather API.',
+    category: 'Dashboards',
+    technologies: ['JavaScript', 'Weather API', 'CSS3'],
+    image: 'assets/images/projects/project-placeholder.svg',
+    github: 'https://github.com/Ankan-76',
+    demo: '[Live Demo URL]',
+    featured: false,
+  },
+  {
+    id: 'blog-website',
+    title: 'Blog Website',
+    description: 'A modern blog platform with category filtering, search functionality, and markdown support.',
+    category: 'Web Apps',
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
+    image: 'assets/images/projects/project-placeholder.svg',
+    github: 'https://github.com/Ankan-76',
+    demo: '[Live Demo URL]',
+    featured: false,
+  },
+  {
+    id: 'expense-tracker',
+    title: 'Expense Tracker',
+    description: 'A personal expense tracker to manage income, expenses, and visualize spending with interactive charts.',
+    category: 'Dashboards',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
+    image: 'assets/images/projects/project-placeholder.svg',
+    github: 'https://github.com/Ankan-76',
+    demo: '[Live Demo URL]',
+    featured: false,
+  },
+];
+
+export const categories = ['All', 'Web Apps', 'Dashboards', 'Other'];

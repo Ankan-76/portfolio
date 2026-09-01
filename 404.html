@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — Ankan Biswas</title>
+    <meta name="description" content="The page you're looking for doesn't exist.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#06060f', surface: '#14142b', accent: '#7c3aed', 'accent-light': '#a78bfa' } } } }</script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-noise">
+    <div class="page-wrapper">
+        <portfolio-sidebar></portfolio-sidebar>
+        <main class="main-content" id="main-content">
+            <section class="hero" style="text-align:center;justify-content:center;" aria-label="Page not found">
+                <div class="hero-content" style="max-width:500px;margin:0 auto;text-align:center;">
+                    <div
+                        style="font-size:8rem;font-weight:900;line-height:1;background:var(--color-accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:var(--space-lg);">
+                        404</div>
+                    <h1
+                        style="font-size:var(--text-3xl);font-weight:700;margin-bottom:var(--space-md);color:var(--color-text-primary);">
+                        Page Not Found</h1>
+                    <p style="color:var(--color-text-secondary);margin-bottom:var(--space-2xl);line-height:1.7;">The
+                        page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+                    <div style="display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;">
+                        <a href="index.html" class="btn btn-primary">
+                            Go Home
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

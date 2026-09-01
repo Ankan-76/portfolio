@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankan Biswas — Full Stack Web Developer</title>
+  <meta name="description"
+    content="Ankan Biswas is a Full Stack Web Developer who designs and builds modern, responsive, and high-performance digital experiences for the web.">
+  <link rel="canonical" href="https://Ankan-76.github.io/portfolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ankan Biswas — Full Stack Web Developer">
+  <meta property="og:description"
+    content="I design and build modern, responsive, and high-performance digital experiences for the web.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Ankan-76.github.io/portfolio/">
+  <meta property="og:image" content="https://Ankan-76.github.io/portfolio/assets/images/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ankan Biswas — Full Stack Web Developer">
+  <meta name="twitter:description"
+    content="I design and build modern, responsive, and high-performance digital experiences for the web.">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#06060f',
+            surface: '#14142b',
+            accent: '#7c3aed',
+            'accent-light': '#a78bfa',
+            'accent-secondary': '#06b6d4',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ankan Biswas Portfolio",
+    "url": "https://Ankan-76.github.io/portfolio/",
+    "author": {
+      "@type": "Person",
+      "name": "Ankan Biswas",
+      "jobTitle": "Full Stack Web Developer",
+      "url": "https://Ankan-76.github.io/portfolio/",
+      "sameAs": [
+        "https://github.com/Ankan-76",
+        "https://www.linkedin.com/in/ankanbiswas43",
+        "https://www.facebook.com/Ankan7699",
+        "https://www.instagram.com/ankan_76?igsh=MXR5M2xndGlwZjZqcQ==",
+        "https://x.com/Ankan7699"
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-noise">
+  <div class="page-wrapper">
+    <portfolio-sidebar></portfolio-sidebar>
+
+    <main class="main-content" id="main-content">
+      <!-- ===== HERO SECTION ===== -->
+      <section class="hero" id="hero" aria-label="Hero introduction">
+        <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+        <div class="hero-content">
+          <span class="hero-eyebrow hero-entrance" style="animation-delay: 0.2s">
+            👋 Hello, I'm
+          </span>
+
+          <h1 class="hero-name hero-entrance" style="animation-delay: 0.35s">
+            Ankan Biswas
+          </h1>
+
+          <p class="hero-title hero-entrance" style="animation-delay: 0.5s">
+            Full Stack Web Developer
+          </p>
+
+          <p class="hero-desc hero-entrance" style="animation-delay: 0.65s">
+            MCA Student @MAKAUT | WBJECA GMR 43 | Full-Stack Developer (Django, PHP, Java) | Skilled in Java, Python & C
+            with DSA | Former Full-Stack Developer Intern at Euphoria GenX
+          </p>
+
+          <div class="hero-actions hero-entrance" style="animation-delay: 0.8s">
+            <a href="projects.html" class="btn btn-primary" id="hero-cta-projects">
+              View My Work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="contact.html" class="btn btn-outline" id="hero-cta-contact">
+              Contact Me
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-social hero-entrance" style="animation-delay: 0.95s">
+            <span class="hero-social-label">Find me on</span>
+            <div class="social-links">
+              <a href="https://github.com/Ankan-76" class="social-link" aria-label="Ankan Biswas on GitHub"
+                target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/ankanbiswas43" class="social-link"
+                aria-label="Ankan Biswas on LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/Ankan7699" class="social-link" aria-label="Ankan Biswas on Facebook"
+                target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ankan_76?igsh=MXR5M2xndGlwZjZqcQ==" class="social-link"
+                aria-label="Ankan Biswas on Instagram" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                </svg>
+              </a>
+              <a href="https://x.com/Ankan7699" class="social-link" aria-label="Ankan Biswas on X" target="_blank"
+                rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator hero-entrance" style="animation-delay: 1.2s">
+          <span>Scroll Down</span>
+          <div class="scroll-indicator-mouse">
+            <div class="scroll-indicator-dot"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SELECTED WORK ===== -->
+      <section class="section" id="selected-work" aria-labelledby="work-heading">
+        <div class="section-header reveal">
+          <span class="heading-eyebrow">Portfolio</span>
+          <h2 class="section-title" id="work-heading">Selected <span class="accent">Work</span></h2>
+          <p class="section-subtitle">Here are some of the projects I've worked on. Each project represents a challenge,
+            a solution, and a step forward.</p>
+        </div>
+
+        <div class="section-grid section-grid-3">
+          <!-- Project Card 1 -->
+          <article class="project-card card-3d reveal stagger-1" data-category="Web Apps">
+            <div class="project-card-image">
+              <div
+                style="width:100%;height:100%;background:linear-gradient(135deg, #1a1a3e 0%, #14142b 100%);display:flex;align-items:center;justify-content:center;color:var(--color-text-muted);font-size:0.875rem;">
+                Project Screenshot</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Portfolio Website</h3>
+              <p class="project-card-desc">A personal portfolio website to showcase my skills, projects, and experience
+                with modern 3D animations.</p>
+              <div class="project-card-techs">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">Tailwind CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+              <div class="project-card-links">
+                <a href="[Live Demo URL]" class="project-card-link" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+                <a href="https://github.com/Ankan-76" class="project-card-link" target="_blank"
+                  rel="noopener noreferrer">
+                  GitHub
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card card-3d reveal stagger-2" data-category="Web Apps">
+            <div class="project-card-image">
+              <div
+                style="width:100%;height:100%;background:linear-gradient(135deg, #1e1e45 0%, #14142b 100%);display:flex;align-items:center;justify-content:center;color:var(--color-text-muted);font-size:0.875rem;">
+                Project Screenshot</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">E-Commerce Store</h3>
+              <p class="project-card-desc">A full-stack e-commerce platform with product filtering, cart functionality,
+                and secure checkout.</p>
+              <div class="project-card-techs">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">REST API</span>
+              </div>
+              <div class="project-card-links">
+                <a href="[Live Demo URL]" class="project-card-link" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+                <a href="https://github.com/Ankan-76" class="project-card-link" target="_blank"
+                  rel="noopener noreferrer">
+                  GitHub
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card card-3d reveal stagger-3" data-category="Web Apps">
+            <div class="project-card-image">
+              <div
+                style="width:100%;height:100%;background:linear-gradient(135deg, #111128 0%, #0c0c1d 100%);display:flex;align-items:center;justify-content:center;color:var(--color-text-muted);font-size:0.875rem;">
+                Project Screenshot</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Task Management App</h3>
+              <p class="project-card-desc">A task management application to organize, set priorities, and track progress
+                of daily tasks.</p>
+              <div class="project-card-techs">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+              <div class="project-card-links">
+                <a href="[Live Demo URL]" class="project-card-link" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+                <a href="https://github.com/Ankan-76" class="project-card-link" target="_blank"
+                  rel="noopener noreferrer">
+                  GitHub
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-12 reveal">
+          <a href="projects.html" class="btn btn-outline">
+            View All Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT SNAPSHOT ===== -->
+      <section class="section" id="about-snapshot" aria-labelledby="about-heading"
+        style="background: var(--color-bg-secondary);">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div class="reveal">
+            <span class="heading-eyebrow">About Me</span>
+            <h2 class="section-title" id="about-heading">Crafting Digital Experiences That <span class="accent">Make
+                Impact</span></h2>
+            <p class="mt-4" style="color: var(--color-text-secondary); line-height: 1.8;">
+              I'm a passionate Full Stack Web Developer who loves turning ideas into clean, responsive, and
+              user-friendly web applications. I enjoy solving problems, learning new technologies, and building products
+              that make a difference.
+            </p>
+            <a href="about.html" class="btn btn-outline mt-6">
+              More About Me
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+          <div class="section-grid section-grid-2 reveal stagger-2">
+            <div class="stat-card">
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Technologies Used</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Commitment</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS SNAPSHOT ===== -->
+      <section class="section" id="skills-snapshot" aria-labelledby="skills-heading">
+        <div class="section-header reveal">
+          <span class="heading-eyebrow">My Skills</span>
+          <h2 class="section-title" id="skills-heading">Technologies I <span class="accent">Work With</span></h2>
+        </div>
+        <div class="section-grid section-grid-4">
+          <div class="skill-card reveal stagger-1">
+            <div class="skill-card-icon">🌐</div>
+            <div class="skill-card-name">HTML5</div>
+          </div>
+          <div class="skill-card reveal stagger-2">
+            <div class="skill-card-icon">🎨</div>
+            <div class="skill-card-name">CSS3</div>
+          </div>
+          <div class="skill-card reveal stagger-3">
+            <div class="skill-card-icon">💨</div>
+            <div class="skill-card-name">Tailwind CSS</div>
+          </div>
+          <div class="skill-card reveal stagger-4">
+            <div class="skill-card-icon">⚡</div>
+            <div class="skill-card-name">JavaScript</div>
+          </div>
+          <div class="skill-card reveal stagger-5">
+            <div class="skill-card-icon">🔷</div>
+            <div class="skill-card-name">TypeScript</div>
+          </div>
+          <div class="skill-card reveal stagger-6">
+            <div class="skill-card-icon">🔀</div>
+            <div class="skill-card-name">Git</div>
+          </div>
+          <div class="skill-card reveal stagger-7">
+            <div class="skill-card-icon">🐙</div>
+            <div class="skill-card-name">GitHub</div>
+          </div>
+          <div class="skill-card reveal stagger-8">
+            <div class="skill-card-icon">🔗</div>
+            <div class="skill-card-name">REST APIs</div>
+          </div>
+        </div>
+        <div class="text-center mt-8 reveal">
+          <a href="skills.html" class="btn btn-outline">
+            View All Skills
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== SERVICES SNAPSHOT ===== -->
+      <section class="section" id="services-snapshot" aria-labelledby="services-heading"
+        style="background: var(--color-bg-secondary);">
+        <div class="section-header reveal">
+          <span class="heading-eyebrow">What I Do</span>
+          <h2 class="section-title" id="services-heading">Services I <span class="accent">Offer</span></h2>
+        </div>
+        <div class="section-grid section-grid-3">
+          <div class="service-card reveal stagger-1">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3 class="service-title">Frontend Development</h3>
+            <p class="service-desc">Building interactive, responsive user interfaces with modern frameworks and best
+              practices.</p>
+          </div>
+          <div class="service-card reveal stagger-2">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3 class="service-title">Responsive Websites</h3>
+            <p class="service-desc">Crafting websites that look and work beautifully across all devices and screen
+              sizes.</p>
+          </div>
+          <div class="service-card reveal stagger-3">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Performance Optimization</h3>
+            <p class="service-desc">Optimizing load times, rendering performance, and overall user experience for the
+              web.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA BANNER ===== -->
+      <section class="section" id="cta" aria-labelledby="cta-heading">
+        <div class="cta-banner reveal-scale">
+          <span class="heading-eyebrow" style="justify-content:center; margin-bottom: 1rem;">Get In Touch</span>
+          <h2 class="section-title" id="cta-heading" style="text-align:center;">Have a project in mind?<br>Let's <span
+              class="accent">work together</span>.</h2>
+          <p class="section-subtitle mx-auto mt-4" style="text-align:center;">I'm always open to discussing new
+            projects, creative ideas, or opportunities to be part of your vision.</p>
+          <div class="flex justify-center gap-4 mt-8 flex-wrap">
+            <a href="contact.html" class="btn btn-primary">
+              Contact Me
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <portfolio-footer></portfolio-footer>
+    </main>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
