@@ -160,6 +160,58 @@
           </div>
         </div>
 
+        <!-- ===== FLOATING CODE WINDOW ===== -->
+        <div class="hidden xl:block absolute right-12 z-[2] hero-entrance"
+          style="animation-delay: 1.1s; width: 450px; top: 25%; transform: translateY(-50%) perspective(1200px);">
+          <div style="animation: float 6s ease-in-out infinite;">
+            <div
+              class="rounded-2xl border border-[var(--color-border)] backdrop-blur-md bg-[rgba(20,20,43,0.4)] shadow-[var(--shadow-glow-lg)] overflow-hidden hover:border-[var(--color-border-active)] transition-all duration-300"
+              style="transform-style: preserve-3d; transform: rotateY(-12deg) rotateX(4deg);">
+              <!-- Window Header -->
+              <div
+                class="flex items-center justify-between px-5 py-4 border-b border-[var(--color-border)] bg-[rgba(12,12,29,0.7)]">
+                <div class="flex gap-2">
+                  <div class="w-3 h-3 rounded-full bg-[#ff0000]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#ffff00]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#00ff00]"></div>
+                </div>
+                <div class="text-[10px] font-mono tracking-[0.2em] text-[var(--color-text-muted)] uppercase">
+                  ANKAN BISWAS
+                </div>
+              </div>
+              <!-- Window Body -->
+              <div class="p-6 font-mono text-sm leading-[2.2]">
+                <div class="flex">
+                  <div
+                    class="text-[var(--color-text-muted)]/50 text-right pr-5 select-none shrink-0 border-r border-[var(--color-border)] mr-5">
+                    01<br>02<br>03<br>04<br>05<br>06<br>07<br>08<br>09<br>10<br>11
+                  </div>
+                  <div class="text-[var(--color-text-primary)] whitespace-nowrap overflow-hidden">
+                    <span class="text-[var(--color-accent-light)]">const</span> developer = <span
+                      class="text-[var(--color-accent-secondary)]">"Ankan"</span>;<br>
+                    <span class="text-[var(--color-accent-light)]">const</span> stack = [<span
+                      class="text-[var(--color-accent-secondary)]">"HTML5"</span>, <span
+                      class="text-[var(--color-accent-secondary)]">"TAILWIND CSS"</span>, <span
+                      class="text-[var(--color-accent-secondary)]">"JS"</span>];<br>
+                    <span class="text-[var(--color-accent-light)]">function</span> <span
+                      class="text-[var(--color-accent-light)]">build</span>(idea) {<br>
+                    &nbsp;&nbsp;<span class="text-[var(--color-accent-light)]">return</span> {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;quality: <span class="text-[var(--color-accent-secondary)]">true</span>,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;accessible: <span
+                      class="text-[var(--color-accent-secondary)]">true</span>,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;responsive: <span
+                      class="text-[var(--color-accent-secondary)]">true</span>,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;motion: <span
+                      class="text-[var(--color-accent-secondary)]">"intentional"</span><br>
+                    &nbsp;&nbsp;};<br>
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="scroll-indicator hero-entrance" style="animation-delay: 1.2s">
           <span>Scroll Down</span>
           <div class="scroll-indicator-mouse">
@@ -172,7 +224,7 @@
       <section class="section" id="selected-work" aria-labelledby="work-heading">
         <div class="section-header reveal">
           <span class="heading-eyebrow">Portfolio</span>
-          <h2 class="section-title" id="work-heading">Selected <span class="accent">Work</span></h2>
+          <h2 class="section-title" id="work-heading">Featured <span class="accent">Work</span></h2>
           <p class="section-subtitle">Here are some of the projects I've worked on. Each project represents a challenge,
             a solution, and a step forward.</p>
         </div>
