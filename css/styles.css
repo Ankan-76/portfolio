@@ -1621,6 +1621,28 @@ body.menu-open {
     font-size: 1rem;
   }
 
+  /* Skill Cards Mobile layout — 2 columns with reduced padding/icons */
+  .section-grid-3, 
+  .section-grid-4,
+  .section-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .skill-card {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .skill-card-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+  }
+
+  .skill-card-name {
+    font-size: 0.75rem;
+  }
+
   /* Hide scroll indicator on mobile */
   .scroll-indicator {
     display: none !important;
