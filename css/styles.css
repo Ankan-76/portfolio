@@ -1557,6 +1557,11 @@ body.menu-open {
    =========================== */
 @media (max-width: 767px) {
 
+  /* Fix breadcrumb overlap with hamburger menu */
+  .breadcrumb {
+    margin-left: 3.5rem;
+  }
+
   /* Center align text and content blocks in mobile view */
   .hero-content,
   .section-header,
@@ -1622,11 +1627,16 @@ body.menu-open {
   }
 
   /* Skill Cards Mobile layout — 2 columns with reduced padding/icons */
-  .section-grid-3, 
+  .section-grid-3,
   .section-grid-4,
   .section-grid-2 {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
+  }
+
+  /* Force grid to 1 column on mobile */
+  .mobile-1col {
+    grid-template-columns: 1fr !important;
   }
 
   .skill-card {
@@ -1648,12 +1658,16 @@ body.menu-open {
     display: none !important;
   }
 }
+
 /* Typewriter Cursor */
 .typewriter-cursor {
   animation: blink 0.75s step-end infinite;
   opacity: 1;
   color: var(--color-accent-light);
 }
+
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
