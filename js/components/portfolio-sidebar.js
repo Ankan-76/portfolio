@@ -155,6 +155,10 @@ class PortfolioSidebar extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
       <style>
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+
         :host {
           display: block;
           position: fixed;
@@ -163,6 +167,7 @@ class PortfolioSidebar extends HTMLElement {
           z-index: 1000;
           width: 240px;
           height: 100vh;
+          height: 100dvh;
         }
 
         /* Hamburger — mobile only */
@@ -234,14 +239,18 @@ class PortfolioSidebar extends HTMLElement {
         .sidebar {
           width: 240px;
           height: 100vh;
+          height: 100dvh; /* use dynamic viewport height for mobile browsers */
           background: rgba(10, 10, 28, 0.95);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           border-right: 1px solid rgba(124, 58, 237, 0.12);
           display: flex;
           flex-direction: column;
-          padding: 2rem 1.25rem;
+          padding: 2rem 1.25rem 3rem; /* Extra padding at the bottom */
           overflow-y: auto;
+          -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+          overscroll-behavior-y: contain; /* Prevent scrolling the body */
+          touch-action: pan-y; /* Ensure vertical scrolling works */
           transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
           position: relative;
           z-index: 1001;
@@ -251,6 +260,7 @@ class PortfolioSidebar extends HTMLElement {
         .brand {
           margin-bottom: 2.5rem;
           text-align: center;
+          flex-shrink: 0;
         }
 
         .brand-avatar-wrap {
@@ -288,6 +298,7 @@ class PortfolioSidebar extends HTMLElement {
         /* Navigation */
         nav {
           flex: 1;
+          flex-shrink: 0;
         }
 
         .nav-list {
@@ -361,6 +372,7 @@ class PortfolioSidebar extends HTMLElement {
           margin-top: auto;
           padding-top: 1.5rem;
           border-top: 1px solid rgba(124, 58, 237, 0.1);
+          flex-shrink: 0;
         }
 
         .social-label {
@@ -510,6 +522,9 @@ class PortfolioSidebar extends HTMLElement {
             position: fixed;
             top: 0;
             left: 0;
+            bottom: 0;
+            height: 100vh;
+            height: 100dvh;
             transform: translateX(-100%);
             box-shadow: 4px 0 30px rgba(0, 0, 0, 0.5);
           }
