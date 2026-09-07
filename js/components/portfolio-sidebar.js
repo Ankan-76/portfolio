@@ -386,8 +386,9 @@ class PortfolioSidebar extends HTMLElement {
 
         .social-links {
           display: flex;
-          gap: 0.5rem;
-          flex-wrap: wrap;
+          gap: 0.35rem;
+          flex-wrap: nowrap;
+          justify-content: space-between;
           margin-bottom: 1rem;
         }
 
@@ -395,8 +396,8 @@ class PortfolioSidebar extends HTMLElement {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 36px;
-          height: 36px;
+          width: 34px;
+          height: 34px;
           border-radius: 6px;
           border: 1px solid rgba(124, 58, 237, 0.15);
           color: #a5a3b5;

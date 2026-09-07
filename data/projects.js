@@ -8,9 +8,9 @@ export const projects = [
     description: 'A personal portfolio website to showcase my skills, projects, and experience. Built with modern web technologies and 3D animations.',
     category: 'Web Apps',
     technologies: ['HTML5', 'Tailwind CSS', 'JavaScript'],
-    image: 'assets/images/projects/project-placeholder.svg',
+    image: '/assets/images/projects/portfolio.png',
     github: 'https://github.com/Ankan-76',
-    demo: '[Live Demo URL]',
+    demo: 'https://ankan-76.github.io/portfolio/',
     featured: true,
   },
   {
