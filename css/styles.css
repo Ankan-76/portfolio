@@ -418,15 +418,15 @@ ol {
 }
 
 .section-grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .section-grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .section-grid-4 {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 /* ===========================
@@ -1813,4 +1813,25 @@ body.menu-open {
   50% {
     opacity: 0;
   }
+}
+
+/* ===========================
+   WORK PROCESS ANIMATION
+   =========================== */
+.process-step.active .process-circle {
+  transform: translateY(-0.5rem) !important;
+  box-shadow: 0 0 35px rgba(124, 58, 237, 0.6) !important;
+}
+
+.process-step.active .process-hover-bg {
+  opacity: 1 !important;
+}
+
+.process-step.active .process-hover-svg {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+}
+
+.process-step.active .process-hover-num {
+  opacity: 1 !important;
 }

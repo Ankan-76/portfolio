@@ -250,18 +250,33 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-4 relative z-10">
                         <!-- Step 1: Discovery -->
-                        <div class="flex flex-col items-center text-center reveal stagger-1">
-                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid shadow-[0_0_25px_rgba(124,58,237,0.3)] mb-6 transition-all duration-300 group hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(124,58,237,0.6)]"
-                                style="background: linear-gradient(135deg, #1e1450, #5b21b6); border-color: var(--color-bg-primary);">
-                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border border-[rgba(124,58,237,0.5)] flex items-center justify-center text-xs font-bold z-20 shadow-md"
-                                    style="background: var(--color-bg-primary); color: var(--color-accent-light);">01
-                                </div>
-                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#ffffff"
+                        <div class="flex flex-col items-center text-center reveal stagger-1 process-step">
+                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid mb-6 transition-all duration-300 group hover:-translate-y-2 process-circle"
+                                style="background: var(--color-bg-secondary); border-color: var(--color-bg-primary); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border flex items-center justify-center text-xs font-bold z-20"
+                                    style="background: var(--color-bg-primary); border-color: rgba(255,255,255,0.1); color: var(--color-text-muted);">
+                                    01</div>
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="group-hover:scale-110 transition-transform duration-300">
+                                    class="transition-all duration-300 group-hover:scale-110"
+                                    style="color: var(--color-text-secondary);">
                                     <circle cx="11" cy="11" r="8"></circle>
                                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                 </svg>
+
+                                <!-- Hover layer -->
+                                <div class="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center -z-0 process-hover-bg"
+                                    style="background: linear-gradient(135deg, #1e1450, #5b21b6); box-shadow: 0 0 25px rgba(124,58,237,0.4);">
+                                </div>
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#fff"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="absolute opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 z-10 process-hover-svg">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs font-bold z-20 shadow-md transition-opacity duration-300 process-hover-num"
+                                    style="background: var(--color-bg-primary); border-color: rgba(124,58,237,0.5); color: var(--color-accent-light);">
+                                    01</div>
                             </div>
                             <h3 class="text-xl font-bold mb-3" style="color: var(--color-text-primary);">Discovery</h3>
                             <p class="text-sm max-w-[200px] hidden sm:block"
@@ -270,8 +285,8 @@
                         </div>
 
                         <!-- Step 2: Design -->
-                        <div class="flex flex-col items-center text-center reveal stagger-2">
-                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid mb-6 transition-all duration-300 group hover:-translate-y-2"
+                        <div class="flex flex-col items-center text-center reveal stagger-2 process-step">
+                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid mb-6 transition-all duration-300 group hover:-translate-y-2 process-circle"
                                 style="background: var(--color-bg-secondary); border-color: var(--color-bg-primary); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                                 <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border flex items-center justify-center text-xs font-bold z-20"
                                     style="background: var(--color-bg-primary); border-color: rgba(255,255,255,0.1); color: var(--color-text-muted);">
@@ -306,7 +321,7 @@
                                     <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                                     <line x1="12" y1="22.08" x2="12" y2="12"></line>
                                 </svg>
-                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs font-bold z-20 shadow-md transition-opacity duration-300"
+                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs font-bold z-20 shadow-md transition-opacity duration-300 process-hover-num"
                                     style="background: var(--color-bg-primary); border-color: rgba(124,58,237,0.5); color: var(--color-accent-light);">
                                     02</div>
                             </div>
@@ -317,8 +332,8 @@
                         </div>
 
                         <!-- Step 3: Development -->
-                        <div class="flex flex-col items-center text-center reveal stagger-3">
-                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid mb-6 transition-all duration-300 group hover:-translate-y-2"
+                        <div class="flex flex-col items-center text-center reveal stagger-3 process-step">
+                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid mb-6 transition-all duration-300 group hover:-translate-y-2 process-circle"
                                 style="background: var(--color-bg-secondary); border-color: var(--color-bg-primary); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                                 <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border flex items-center justify-center text-xs font-bold z-20"
                                     style="background: var(--color-bg-primary); border-color: rgba(255,255,255,0.1); color: var(--color-text-muted);">
@@ -341,7 +356,7 @@
                                     <polyline points="16 18 22 12 16 6"></polyline>
                                     <polyline points="8 6 2 12 8 18"></polyline>
                                 </svg>
-                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs font-bold z-20 shadow-md transition-opacity duration-300"
+                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs font-bold z-20 shadow-md transition-opacity duration-300 process-hover-num"
                                     style="background: var(--color-bg-primary); border-color: rgba(124,58,237,0.5); color: var(--color-accent-light);">
                                     03</div>
                             </div>
@@ -353,8 +368,8 @@
                         </div>
 
                         <!-- Step 4: Deployment -->
-                        <div class="flex flex-col items-center text-center reveal stagger-4">
-                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid mb-6 transition-all duration-300 group hover:-translate-y-2"
+                        <div class="flex flex-col items-center text-center reveal stagger-4 process-step">
+                            <div class="relative w-[96px] h-[96px] rounded-full flex items-center justify-center border-4 border-solid mb-6 transition-all duration-300 group hover:-translate-y-2 process-circle"
                                 style="background: var(--color-bg-secondary); border-color: var(--color-bg-primary); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                                 <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border flex items-center justify-center text-xs font-bold z-20"
                                     style="background: var(--color-bg-primary); border-color: rgba(255,255,255,0.1); color: var(--color-text-muted);">
@@ -375,7 +390,7 @@
                                     class="absolute opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 z-10">
                                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                                 </svg>
-                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs font-bold z-20 shadow-md transition-opacity duration-300"
+                                <div class="absolute -top-1 -right-1 w-8 h-8 rounded-full border opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs font-bold z-20 shadow-md transition-opacity duration-300 process-hover-num"
                                     style="background: var(--color-bg-primary); border-color: rgba(124,58,237,0.5); color: var(--color-accent-light);">
                                     04</div>
                             </div>

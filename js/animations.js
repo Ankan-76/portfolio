@@ -125,3 +125,18 @@ export function initTypewriter() {
     // Initial delay before starting the effect
     setTimeout(type, 1500);
 }
+
+// Sequence animation for work process steps
+export function initWorkProcessAnimation() {
+    const steps = document.querySelectorAll('.process-step');
+    if (!steps.length) return;
+
+    let currentIndex = 0;
+    steps[0].classList.add('active');
+
+    setInterval(() => {
+        steps[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % steps.length;
+        steps[currentIndex].classList.add('active');
+    }, 2500);
+}
