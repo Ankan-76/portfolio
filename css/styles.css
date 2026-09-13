@@ -1427,6 +1427,94 @@ ol {
 }
 
 /* ===========================
+   EXPERIENCE TIMELINE LOGO
+   =========================== */
+.timeline-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.timeline-logo-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: all var(--duration-normal) var(--ease-spring);
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-logo-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent-gradient);
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-out-expo);
+  z-index: 0;
+}
+
+.timeline-logo-placeholder:hover {
+  transform: translateY(-4px) scale(1.05);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.timeline-logo-placeholder:hover::before {
+  opacity: 0.1;
+}
+
+.timeline-logo-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  transition: color var(--duration-fast) var(--ease-out-expo);
+}
+
+.timeline-logo-placeholder:hover .timeline-logo-content {
+  color: var(--color-accent-light);
+}
+
+@media (max-width: 767px) {
+  .timeline-logo-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+  .mobile-accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0 !important;
+    transition: all 0.4s ease;
+  }
+  .mobile-accordion-content.expanded {
+    max-height: 1000px;
+    opacity: 1;
+    margin-top: var(--space-md) !important;
+  }
+}
+
+/* ===========================
    ABOUT PROFILE
    =========================== */
 .about-profile-card {
