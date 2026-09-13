@@ -1940,3 +1940,85 @@ body.menu-open {
 .process-step.active .process-hover-num {
   opacity: 1 !important;
 }
+
+/* ===========================
+   FORM STYLES
+   =========================== */
+.form-group {
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+  transition: color var(--duration-fast) var(--ease-out-expo);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-family: inherit;
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: all var(--duration-normal) var(--ease-out-expo);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-input:hover,
+.form-textarea:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--color-border-hover);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+.form-group:focus-within .form-label {
+  color: var(--color-accent-light);
+}
+
+/* Form Submit Button Animation */
+#contact-form button[type="submit"] {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#contact-form button[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s var(--ease-out-expo);
+  z-index: -1;
+}
+
+#contact-form button[type="submit"]:hover::before {
+  left: 100%;
+}
