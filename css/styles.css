@@ -489,6 +489,21 @@ ol {
   .page-hero {
     padding: var(--space-2xl) var(--space-lg) var(--space-lg);
   }
+
+  .page-hero .section-title,
+  .page-hero .section-subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-hero .section-title {
+    margin-bottom: var(--space-md);
+  }
+
+  .page-hero .breadcrumb {
+    justify-content: center;
+  }
 }
 
 /* ===========================
@@ -1500,6 +1515,7 @@ ol {
     align-items: flex-start;
     gap: var(--space-sm);
   }
+
   .mobile-accordion-content {
     max-height: 0;
     opacity: 0;
@@ -1507,6 +1523,7 @@ ol {
     margin-top: 0 !important;
     transition: all 0.4s ease;
   }
+
   .mobile-accordion-content.expanded {
     max-height: 1000px;
     opacity: 1;
