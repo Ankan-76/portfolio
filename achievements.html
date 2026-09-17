@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements — Ankan Biswas | Full Stack Web Developer</title>
+    <meta name="description" content="Achievements and awards of Ankan Biswas.">
+    <link rel="canonical" href="https://Ankan-76.github.io/portfolio/achievements.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#06060f', surface: '#14142b', accent: '#7c3aed', 'accent-light': '#a78bfa', 'accent-secondary': '#06b6d4' } } } }</script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-noise">
+    <div class="page-wrapper">
+        <portfolio-sidebar></portfolio-sidebar>
+        <main class="main-content" id="main-content">
+            <!-- Page Hero -->
+            <section class="page-hero" aria-labelledby="achievements-page-heading">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">›</span>
+                    <span class="current" aria-current="page">Achievements</span>
+                </nav>
+                <h1 class="section-title hero-entrance" id="achievements-page-heading" style="animation-delay:0.2s">My
+                    <span class="accent">Achievements</span></h1>
+                <p class="section-subtitle hero-entrance" style="animation-delay:0.35s">Milestones, awards, and
+                    recognitions I've earned along the way.</p>
+            </section>
+
+            <!-- Achievements Grid -->
+            <section class="section">
+                <div class="max-w-5xl mx-auto section-grid section-grid-2 mobile-1col">
+                    <!-- Achievement 1 -->
+                    <div class="card reveal stagger-1" style="padding: 2rem;">
+                        <div style="display:flex; align-items:center; gap: 1rem; margin-bottom: 1rem;">
+                            <div
+                                style="background: rgba(124, 58, 237, 0.1); color: var(--color-accent); padding: 1rem; border-radius: 50%;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" width="32" height="32">
+                                    <circle cx="12" cy="8" r="7" />
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-primary);">
+                                    WBJECA Rank 43</h3>
+                                <p style="color: var(--color-accent-light); font-size: 0.9rem;">2026</p>
+                            </div>
+                        </div>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Secured General Merit Rank 43
+                            in the West Bengal Joint Entrance Exam for Computer Applications (WBJECA), highlighting
+                            strong problem-solving and mathematical abilities.</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="card reveal stagger-2" style="padding: 2rem;">
+                        <div style="display:flex; align-items:center; gap: 1rem; margin-bottom: 1rem;">
+                            <div
+                                style="background: rgba(124, 58, 237, 0.1); color: var(--color-accent); padding: 1rem; border-radius: 50%;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" width="32" height="32">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-primary);">1st
+                                    Rank in Department</h3>
+                                <p style="color: var(--color-accent-light); font-size: 0.9rem;">2026</p>
+                            </div>
+                        </div>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Achieved the highest SGPA in
+                            the 3rd year semester exams during my Bachelor of Computer Applications (BCA) at Global
+                            College of Science and Technology.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <portfolio-footer></portfolio-footer>
+        </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
