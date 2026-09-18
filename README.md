@@ -8,7 +8,7 @@ A hand-coded, multi-page portfolio website for **Ankan Biswas**, a Full Stack We
 
 ## ✨ Key Features
 
-- **Persistent glassmorphism sidebar** — a `<portfolio-sidebar>` Web Component (Shadow DOM) with 7 nav links, automatic active-page highlighting, social links, and a résumé button.
+- **Persistent glassmorphism sidebar** — a `<portfolio-sidebar>` Web Component (Shadow DOM) with 9 nav links, automatic active-page highlighting, social links, and a résumé button.
 - **Animated hero** — a Canvas 2D "3D" scene (wireframe icosahedron + particle field + orbital rings) driven by a `requestAnimationFrame` loop.
 - **Typewriter headline** — cycles through "Full Stack Web Developer", "Tech Enthusiast" and "Problem Solver".
 - **Floating code window** — a 3D-tilted editor mock that floats in the hero on extra-large screens.
@@ -48,6 +48,8 @@ portfolio/
 ├── projects.html                  # Filterable project gallery
 ├── experience.html                # Work + education timelines
 ├── services.html                  # Services, "Why Choose Me", work process
+├── achievements.html              # Milestones, awards, and recognitions
+├── blog.html                      # Thoughts, tutorials, and insights on web development
 ├── contact.html                   # Contact info + Web3Forms contact form
 ├── 404.html                       # Styled not-found page
 ├── css/styles.css                 # The entire design system
@@ -81,6 +83,8 @@ portfolio/
 | `projects.html` | Page hero → Filter bar → 6 project cards → CTA |
 | `experience.html` | Page hero → Work Experience timeline (GitHub, Euphoria GenX, YBI Foundation) → Education timeline (MCA, BCA, WBCHSE, WBBSE) → Quote |
 | `services.html` | Page hero → Service cards → Why Choose Me → My Work Process (4 animated steps) → CTA |
+| `achievements.html` | Page hero → Achievements grid (WBJECA Rank, College Rank) |
+| `blog.html` | Page hero → Blog grid (Web Dev, JavaScript, Backend articles) |
 | `contact.html` | Page hero → Contact info cards + social links → "Send a Message" form |
 | `404.html` | Full-screen gradient 404 with "Go Home" / "Contact Me" actions |
 
@@ -155,7 +159,7 @@ To publish a change, commit and push to `main` — GitHub Pages is rebuilt from 
 - Canonical URL on every page.
 - Open Graph + Twitter Card tags (`og:title`, `og:description`, `og:image`, `twitter:card`).
 - JSON-LD structured data: `WebSite` + `Person` (with `sameAs` social profiles) on the homepage, `WebPage` on the about page.
-- `sitemap.xml` lists all 7 indexable pages with priorities (`/` = 1.0, projects = 0.9, about/skills/contact = 0.8, experience/services = 0.7).
+- `sitemap.xml` lists all 9 indexable pages with priorities (`/` = 1.0, projects = 0.9, about/skills/contact = 0.8, experience/services/achievements/blog = 0.7).
 - `robots.txt` allows all crawlers and points to the sitemap.
 - `site.webmanifest` sets the theme colour (`#7c3aed`) and standalone display mode.
 
