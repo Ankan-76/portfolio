@@ -2,7 +2,7 @@
 
 ![Portfolio homepage preview — glassmorphism sidebar, animated hero, and floating code window](assets/images/projects/portfolio.png)
 
-A hand-coded, multi-page portfolio website for **Ankan Biswas**, a Full Stack Web Developer. It's built with HTML5, one custom CSS design system, and framework-free JavaScript (ES modules + Web Components) — **no bundler, no npm, no build step**.
+A hand-coded, multi-page portfolio website for **Ankan Biswas**, a Full Stack Web Developer. It's built with HTML5, Tailwind CSS design system, and framework-free JavaScript (ES modules + Web Components) — **no bundler, no npm, no build step**.
 
 **Live site:** https://ankan-76.github.io/portfolio/
 
